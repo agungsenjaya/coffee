@@ -1,0 +1,123 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800&display=swap'); */
+@font-face {
+    font-family: 'SoDoSans-Regular';
+    src: url('../font/SoDoSans-Regular.woff2')format('woff2');
+  }
+@font-face {
+    font-family: 'SoDoSans-SemiBold';
+    src: url('../font/SoDoSans-SemiBold.woff2')format('woff2');
+  }
+@font-face {
+    font-family: 'SoDoSans-Bold';
+    src: url('../font/SoDoSans-Bold.woff2')format('woff2');
+  }
+@font-face {
+    font-family: 'SoDoSans-Light';
+    src: url('../font/SoDoSans-Light.woff2')format('woff2');
+  }
+@font-face {
+    font-family: 'Pike-Bold';
+    src: url('../font/Pike-Bold.woff2')format('woff2');
+  }
+.nav-top > li {
+  margin-left: 1em;
+}
+.nav-top > li > a {
+    color: #2A241B;
+    text-transform: uppercase;
+    font-family: 'SoDoSans-SemiBold';
+    font-size: 13px;
+}
+.nav-top > li > a:hover {
+    color: #6c757d;
+}
+.title-1 {
+  font-family: 'SoDoSans-SemiBold';
+}
+.title-2 {
+  font-family: 'SoDoSans-Bold';
+}
+.title-3 {
+  font-family: 'SoDoSans-Light';
+}
+.title-4 {
+  font-family: 'Pike-Bold';
+  text-transform: uppercase;
+}
+.line-divider {
+  background-color: #ffc107;
+  width: 9em;
+  height: 2px;
+}
+.line-divider-2 {
+  background-color: #ffc107;
+  width: 5em;
+  height: 2px;
+}
+.space-m {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.space-xl {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.nav-social > li {
+  margin-left: 15px;
+}
+.nav-social > li >  a {
+  padding: 0;
+}
+.btn-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50rem;
+  font-size: 1em;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  padding: 48px 0 0;
+  /* box-shadow: inset -1px 0 0 rgb(0 0 0 / 10%); */
+}
+.nav-admin {
+  line-height: 2;
+}
+.nav-admin > li {
+  border-left: 3px solid transparent;
+}
+.nav-admin > li:hover {
+  background: #ffffff21;
+  border-left: 3px solid #ffc107;
+}
+.nav-active {
+  background: #ffffff21;
+  border-left: 3px solid #ffc107 !important;
+}
+.nav-admin > li > a {
+  color: #fff;
+  /* font-weight: normal; */
+  /* font-family: 'SoDoSans-Light'; */
+}
+.nav-admin > li > a:hover {
+  color: #fff;
+}
+.line-2 {
+  line-height: 2;
+}
+.border-transparent {
+  border-color: transparent;
+}
+.to-center {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.grad-1 {
+  background-image:linear-gradient(360deg,#2A241B 5%,#2a241b0d);
+}
