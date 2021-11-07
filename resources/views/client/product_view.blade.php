@@ -43,16 +43,17 @@
 <section class="space-m">
     <div class="container">
                 <div class="row">
-                    <div class="col-md-6 order-2 order-md-1"> 
+                    <!-- <div class="col-md-6 order-2 order-md-1">  -->
+                    <div class="col-md-12"> 
                     <div class="mb-4">
                     <h1 class="title-4 my-0">Detail Produk</h1>
                     <div class="line-divider-2"></div>
                 </div>
-                       <p class="">{{ $data->content }}</p>
+                       <p class="">{!! $data->content !!}</p>
                     </div>
-                    <div class="col-md-6 order-1 order-md-2">
+                    <!-- <div class="col-md-6 order-1 order-md-2">
                 <img src="{{ url('') . '/' . $data->img }}" alt="" width="100%" class="">
-            </div>
+            </div> -->
                 </div>
     </div>
 </section>

@@ -28,7 +28,7 @@
                     <div class="card-body">
                         <p class="mb-0 text-warnings title-3">Arabica</p>
                         <h5 class="title-1 text-capitalize text-white">{{ $pro->judul }}</h5>
-                        <p class="title-3 opacity-75 small">{{ substr($pro->content, 0, 80) }}..</p>
+                        <p class="title-3 opacity-75 small">{!! substr($pro->content, 0, 80) !!}..</p>
                     </div>
                     <div class="card-footer bg-warnings rounded-0 text-brown d-flex justify-content-between">
                         <div>
