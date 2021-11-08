@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\App;
+
+$locale = App::currentLocale();
 
 /*
 |--------------------------------------------------------------------------
@@ -16,12 +19,12 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::GET('/','ClientController@home')->name('index.home');
-Route::GET('about','ClientController@about')->name('about');
-Route::GET('products/view/{id}','ClientController@product_view')->name('product_view');
-Route::GET('products','ClientController@product')->name('product');
-Route::GET('contact','ClientController@contact')->name('contact');
-Route::POST('contact/send','ClientController@contact_send')->name('contact.send');
+    Route::GET('/','ClientController@home')->name('index.home');
+    Route::GET('about','ClientController@about')->name('about');
+    Route::GET('products/view/{id}','ClientController@product_view')->name('product_view');
+    Route::GET('products','ClientController@product')->name('product');
+    Route::GET('contact','ClientController@contact')->name('contact');
+    Route::POST('contact/send','ClientController@contact_send')->name('contact.send');
 
 // Auth::routes();
 Auth::routes(['register' => false, 'reset' => false]);
