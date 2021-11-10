@@ -2,14 +2,14 @@
     <div class="container d-flex justify-content-between text-uppercase text-white title-4">
         <div class="align-self-center">
             <p class="mb-0 small">
-            &copy; Copyright 2021 PT. Sunda Been Coffee All Reserved
+            &copy; {{ translate('hak cipta semua dilindungi undang-undang')}} sunda beans coffee
             </p>
         </div>
         <div>
         <!-- Follow Us -->
         <ul class="nav nav-social">
   <li class="nav-item align-self-center small">
-    Follow us
+    {{ translate('Ikuti kami')}}
   </li>
   <li class="nav-item">
     <a class="nav-link" href="#">

@@ -121,3 +121,13 @@
 .grad-1 {
   background-image:linear-gradient(360deg,#2A241B 5%,#2a241b0d);
 }
+.card-pro {
+  background: #2A241B;
+  color: #fff;
+  border: none;
+  border-radius: none;
+}
+.card-pro:hover {
+  background: #2A241B;
+  color: #fff;
+}

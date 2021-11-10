@@ -6,14 +6,14 @@
             <div class="align-self-center">
             <nav aria-label="breadcrumb">
             <ol class="breadcrumb mb-0 title-4 small">
-                <li class="breadcrumb-item"><a href="{{ route('product') }}" class="text-warning">Products</a></li>
+                <li class="breadcrumb-item"><a href="{{ route('product') }}" class="text-warning">{{ translate('Product')}}</a></li>
                 <li class="breadcrumb-item active text-white" aria-current="page">{{ $data->judul }}</li>
             </ol>
             </nav>
             </div>
         <div>
         <div class="a2a_kit a2a_kit_size_32 a2a_default_style justify-content-start d-flex">
-            <div class="text-white title-4 me-3 small">Share product</div>
+            <div class="text-white title-4 me-3 small">{{ translate('Bagikan')}}</div>
             <div>
                 <a class="a2a_button_twitter"></a>
                 <a class="ms-2 a2a_button_facebook"></a>
@@ -46,10 +46,10 @@
                     <!-- <div class="col-md-6 order-2 order-md-1">  -->
                     <div class="col-md-12"> 
                     <div class="mb-4">
-                    <h1 class="title-4 my-0">Detail Produk</h1>
+                    <h1 class="title-4 my-0">{{ translate('Detail Produk') }}</h1>
                     <div class="line-divider-2"></div>
                 </div>
-                       <p class="">{!! $data->content !!}</p>
+                       <p class="">{!! translate($data->content) !!}</p>
                     </div>
                     <!-- <div class="col-md-6 order-1 order-md-2">
                 <img src="{{ url('') . '/' . $data->img }}" alt="" width="100%" class="">

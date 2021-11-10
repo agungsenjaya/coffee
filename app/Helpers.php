@@ -1,6 +1,7 @@
 <?php
 
-function routing($a) {
+function routing($a) 
+{
     switch ($a) {
         case 'home':
             echo 'Dashboard';
@@ -26,7 +27,8 @@ function routing($a) {
     }
 }
 
-function counting($a) {
+function counting($a) 
+{
     $b = strlen($a);
     switch ($b) {
         case 1:
@@ -38,5 +40,11 @@ function counting($a) {
         default:
             echo '000';
             break;
+        }
     }
-}
+
+    function translate($a)
+    {
+        $var = LaravelLocalization::getCurrentLocale();
+        echo \Stichoza\GoogleTranslate\GoogleTranslate::trans($a, $var, 'id');
+    }

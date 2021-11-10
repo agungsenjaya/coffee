@@ -42,7 +42,7 @@ class ClientController extends Controller
             'email' => $request->email,
             'pesan' => $request->pesan,
             ];
-        Mail::to('info@sundacoffeebeans.jp')->send(new \App\Mail\ContactMail($details));
+        Mail::to('info@sundacoffeebeans.com')->send(new \App\Mail\ContactMail($details));
 
         if (Mail::failures()) {
             // return response showing failed emails
@@ -50,4 +50,7 @@ class ClientController extends Controller
         Session::flash('sc_alert','Email terkirim balasan akan dikirim ke email anda, Terima Kasih');
         return redirect()->back();
     }
+    // public function notFound(){
+    //     return view('layouts.404');
+    // }
 }
