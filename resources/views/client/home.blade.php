@@ -15,13 +15,16 @@
     <div class="swiper slider-1">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-            <img src="https://dummyimage.com/1349x400" alt="" width="100%" class="rounded">
+            <img src="https://dummyimage.com/1349x400" alt="" width="100%" class="d-none d-sm-block">
+            <img src="https://dummyimage.com/700x400" alt="" width="100%" class="d-sm-none d-block">
         </div>
         <div class="swiper-slide">
-            <img src="https://dummyimage.com/1349x400" alt="" width="100%" class="rounded">
+            <img src="https://dummyimage.com/1349x400" alt="" width="100%" class="d-none d-sm-block">
+            <img src="https://dummyimage.com/700x400" alt="" width="100%" class="d-sm-none d-block">
         </div>
         <div class="swiper-slide">
-            <img src="https://dummyimage.com/1349x400" alt="" width="100%" class="rounded">
+            <img src="https://dummyimage.com/1349x400" alt="" width="100%" class="d-none d-sm-block">
+            <img src="https://dummyimage.com/700x400" alt="" width="100%" class="d-sm-none d-block">
         </div>
       </div>
       <div class="swiper-pagination" style="position:initial !important;"></div>

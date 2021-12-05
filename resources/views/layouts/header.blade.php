@@ -4,7 +4,8 @@
       <img src="{{ asset('img/logo.png') }}" alt="" width="60" class="">
     </a>
     <!-- Menu Website -->
-    <ul class="nav ms-auto mb-2 mb-lg-0 nav-top d-none d-sm-block">
+    <div class="d-none d-sm-block">
+    <ul class="nav ms-auto mb-2 mb-lg-0 nav-top">
         <li class="nav-item">
           <a class="nav-link" href="{{ route('index.home') }}">{{ translate('Beranda')}}</a>
         </li>
@@ -37,11 +38,28 @@
           </ul>
         </li>
       </ul>
+      </div>
       <!-- Menu Mobile Responsive -->
       <div class="d-sm-none d-block">
-        <a href="javascript:void(0)">
-          <i class="bi bi-menu"></i>
-        </a>
+        <div type="button" data-bs-toggle="offcanvas" data-bs-target="#mobile" aria-controls="mobile" class="me-2">
+          <i class="bi bi-list h2"></i>
+        </div>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="mobile" aria-labelledby="mobileLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="mobileLabel">Menus</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+
+        <div class="list-group list-group-flush">
+          <a href="{{ route('index.home') }}" class="list-group-item list-group-item-action">{{ translate('Beranda') }}</a>
+          <a href="{{ route('about') }}" class="list-group-item list-group-item-action">{{ translate('Tentang kami') }}</a>
+        </div>
+          
+        </div>
+      </div>
+
       </div>
   </div>
 </nav>

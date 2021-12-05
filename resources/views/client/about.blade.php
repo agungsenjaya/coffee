@@ -18,7 +18,7 @@
     <div class="container">
         <div class="d-flex justify-content-between mb-4">
                 <div>
-                    <h1 class="title-4 my-0">{{ transalate('Produk kami')}}</h1>
+                    <h1 class="title-4 my-0">{{ translate('Produk kami')}}</h1>
                     <div class="line-divider-2"></div>
                 </div>
                 <div>
